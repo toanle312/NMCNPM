@@ -1,0 +1,12 @@
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.dll
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.pdb
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.dll
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.pdb
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\ref\DTO.dll
