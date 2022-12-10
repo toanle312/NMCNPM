@@ -30,6 +30,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             this.loginButton = new System.Windows.Forms.Button();
             this.exitPTB = new System.Windows.Forms.PictureBox();
             this.backgroundPTB = new System.Windows.Forms.PictureBox();
@@ -45,10 +46,12 @@ namespace GUI
             this.panel2 = new System.Windows.Forms.Panel();
             this.passWordTextBox = new System.Windows.Forms.TextBox();
             this.showPass = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.exitPTB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundPTB)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // loginButton
@@ -122,7 +125,7 @@ namespace GUI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(687, 169);
+            this.label3.Location = new System.Drawing.Point(687, 229);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(240, 49);
             this.label3.TabIndex = 5;
@@ -222,14 +225,24 @@ namespace GUI
             // 
             this.showPass.AutoSize = true;
             this.showPass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showPass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.showPass.Location = new System.Drawing.Point(563, 488);
+            this.showPass.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.showPass.Location = new System.Drawing.Point(566, 491);
             this.showPass.Name = "showPass";
-            this.showPass.Size = new System.Drawing.Size(182, 27);
+            this.showPass.Size = new System.Drawing.Size(192, 28);
             this.showPass.TabIndex = 18;
             this.showPass.Text = "Hiển thị mật khẩu";
             this.showPass.UseVisualStyleBackColor = true;
             this.showPass.CheckedChanged += new System.EventHandler(this.showPass_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(761, 124);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // fLogin
             // 
@@ -237,6 +250,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1080, 720);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.showPass);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -251,6 +265,7 @@ namespace GUI
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.loginButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -260,6 +275,7 @@ namespace GUI
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +300,6 @@ namespace GUI
         private Panel panel2;
         private System.Windows.Forms.TextBox passWordTextBox;
         private CheckBox showPass;
+        private PictureBox pictureBox1;
     }
 }

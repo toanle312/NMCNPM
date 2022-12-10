@@ -33,14 +33,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.yesButton = new System.Windows.Forms.Button();
             this.noButton = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(91, 46);
+            this.label1.Location = new System.Drawing.Point(80, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(319, 27);
             this.label1.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.yesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yesButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.yesButton.ForeColor = System.Drawing.Color.White;
-            this.yesButton.Location = new System.Drawing.Point(128, 95);
+            this.yesButton.Location = new System.Drawing.Point(128, 73);
             this.yesButton.Name = "yesButton";
             this.yesButton.Size = new System.Drawing.Size(94, 40);
             this.yesButton.TabIndex = 2;
@@ -85,7 +85,7 @@
             this.noButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.noButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.noButton.ForeColor = System.Drawing.Color.White;
-            this.noButton.Location = new System.Drawing.Point(281, 95);
+            this.noButton.Location = new System.Drawing.Point(281, 73);
             this.noButton.Name = "noButton";
             this.noButton.Size = new System.Drawing.Size(94, 40);
             this.noButton.TabIndex = 3;
@@ -93,30 +93,31 @@
             this.noButton.UseVisualStyleBackColor = false;
             this.noButton.Click += new System.EventHandler(this.noButton_Click);
             // 
-            // flowLayoutPanel1
+            // panel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(417, 157);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(416, 140);
+            this.panel1.TabIndex = 4;
             // 
             // fExit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 161);
+            this.ClientSize = new System.Drawing.Size(422, 145);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.noButton);
             this.Controls.Add(this.yesButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fExit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fExit";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -129,6 +130,6 @@
         private Label label1;
         private Button yesButton;
         private Button noButton;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
     }
 }

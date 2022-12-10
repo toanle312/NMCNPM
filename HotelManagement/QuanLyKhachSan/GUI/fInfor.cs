@@ -51,7 +51,6 @@ namespace GUI
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -67,7 +66,6 @@ namespace GUI
 
         private void updateButton_Click(object sender, EventArgs e)
         { 
-
             bool isFill = CheckFillInText(new Control[] { nameTXB, addressTXB, idTXB, contactTXB });
             if(!isFill)
             {

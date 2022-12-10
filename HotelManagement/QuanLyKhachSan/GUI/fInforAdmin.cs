@@ -39,16 +39,7 @@ namespace GUI
             setAccount = account;
         }
 
-        public static bool CheckFillInText(Control[] controls)
-        {
-            foreach (var control in controls)
-            {
-                if (control.Text == string.Empty)
-                    return false;
-            }
-            return true;
-        }
-
+   
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -68,7 +59,7 @@ namespace GUI
         private void updateButton_Click(object sender, EventArgs e)
         { 
 
-            bool isFill = CheckFillInText(new Control[] { nameTXB, addressTXB, idTXB, contactTXB });
+            bool isFill = fInfor.CheckFillInText(new Control[] { nameTXB, addressTXB, idTXB, contactTXB });
             if(!isFill)
             {
                 MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -41,12 +41,10 @@
             this.logOutButton = new System.Windows.Forms.Button();
             this.introduceButton = new System.Windows.Forms.Button();
             this.infoButton = new System.Windows.Forms.Button();
-            this.placeRoomBtn = new System.Windows.Forms.Button();
-            this.searchRoomBtn = new System.Windows.Forms.Button();
+            this.statisticalBtn = new System.Windows.Forms.Button();
+            this.manageStaffBtn = new System.Windows.Forms.Button();
             this.manageClientBtn = new System.Windows.Forms.Button();
-            this.makeReportBtn = new System.Windows.Forms.Button();
-            this.makeBillBtn = new System.Windows.Forms.Button();
-            this.manageServiceBtn = new System.Windows.Forms.Button();
+            this.changeRegulationBtn = new System.Windows.Forms.Button();
             this.manageBillBtn = new System.Windows.Forms.Button();
             this.manageRoomBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.showMenuPTB)).BeginInit();
@@ -230,41 +228,41 @@
             this.infoButton.UseVisualStyleBackColor = false;
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
-            // placeRoomBtn
+            // statisticalBtn
             // 
-            this.placeRoomBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.placeRoomBtn.FlatAppearance.BorderSize = 0;
-            this.placeRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.placeRoomBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.placeRoomBtn.ForeColor = System.Drawing.Color.White;
-            this.placeRoomBtn.Image = global::GUI.Properties.Resources.bookRoom;
-            this.placeRoomBtn.Location = new System.Drawing.Point(62, 70);
-            this.placeRoomBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.placeRoomBtn.Name = "placeRoomBtn";
-            this.placeRoomBtn.Size = new System.Drawing.Size(312, 262);
-            this.placeRoomBtn.TabIndex = 8;
-            this.placeRoomBtn.Text = "Lập phiếu thuê phòng";
-            this.placeRoomBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.placeRoomBtn.UseVisualStyleBackColor = false;
-            this.placeRoomBtn.Click += new System.EventHandler(this.placeRoomBtn_Click);
+            this.statisticalBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
+            this.statisticalBtn.FlatAppearance.BorderSize = 0;
+            this.statisticalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statisticalBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.statisticalBtn.ForeColor = System.Drawing.Color.White;
+            this.statisticalBtn.Image = ((System.Drawing.Image)(resources.GetObject("statisticalBtn.Image")));
+            this.statisticalBtn.Location = new System.Drawing.Point(62, 70);
+            this.statisticalBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.statisticalBtn.Name = "statisticalBtn";
+            this.statisticalBtn.Size = new System.Drawing.Size(280, 262);
+            this.statisticalBtn.TabIndex = 8;
+            this.statisticalBtn.Text = "Thống kê";
+            this.statisticalBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.statisticalBtn.UseVisualStyleBackColor = false;
+            this.statisticalBtn.Click += new System.EventHandler(this.placeRoomBtn_Click);
             // 
-            // searchRoomBtn
+            // manageStaffBtn
             // 
-            this.searchRoomBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.searchRoomBtn.FlatAppearance.BorderSize = 0;
-            this.searchRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchRoomBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.searchRoomBtn.ForeColor = System.Drawing.Color.White;
-            this.searchRoomBtn.Image = global::GUI.Properties.Resources.searchRoom;
-            this.searchRoomBtn.Location = new System.Drawing.Point(62, 354);
-            this.searchRoomBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.searchRoomBtn.Name = "searchRoomBtn";
-            this.searchRoomBtn.Size = new System.Drawing.Size(312, 253);
-            this.searchRoomBtn.TabIndex = 9;
-            this.searchRoomBtn.Text = "Tra cứu phòng";
-            this.searchRoomBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.searchRoomBtn.UseVisualStyleBackColor = false;
-            this.searchRoomBtn.Click += new System.EventHandler(this.searchRoomBtn_Click);
+            this.manageStaffBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
+            this.manageStaffBtn.FlatAppearance.BorderSize = 0;
+            this.manageStaffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageStaffBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.manageStaffBtn.ForeColor = System.Drawing.Color.White;
+            this.manageStaffBtn.Image = ((System.Drawing.Image)(resources.GetObject("manageStaffBtn.Image")));
+            this.manageStaffBtn.Location = new System.Drawing.Point(62, 354);
+            this.manageStaffBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.manageStaffBtn.Name = "manageStaffBtn";
+            this.manageStaffBtn.Size = new System.Drawing.Size(280, 253);
+            this.manageStaffBtn.TabIndex = 9;
+            this.manageStaffBtn.Text = "Quản lý nhân viên";
+            this.manageStaffBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.manageStaffBtn.UseVisualStyleBackColor = false;
+            this.manageStaffBtn.Click += new System.EventHandler(this.searchRoomBtn_Click);
             // 
             // manageClientBtn
             // 
@@ -275,72 +273,34 @@
             this.manageClientBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageClientBtn.ForeColor = System.Drawing.Color.White;
             this.manageClientBtn.Image = global::GUI.Properties.Resources.manageClient;
-            this.manageClientBtn.Location = new System.Drawing.Point(394, 428);
+            this.manageClientBtn.Location = new System.Drawing.Point(368, 354);
             this.manageClientBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageClientBtn.Name = "manageClientBtn";
-            this.manageClientBtn.Size = new System.Drawing.Size(614, 179);
+            this.manageClientBtn.Size = new System.Drawing.Size(380, 253);
             this.manageClientBtn.TabIndex = 3;
             this.manageClientBtn.Text = "Quản lý thông tin khách hàng";
             this.manageClientBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.manageClientBtn.UseVisualStyleBackColor = false;
             this.manageClientBtn.Click += new System.EventHandler(this.manageClientBtn_Click);
             // 
-            // makeReportBtn
+            // changeRegulationBtn
             // 
-            this.makeReportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.makeReportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.makeReportBtn.FlatAppearance.BorderSize = 0;
-            this.makeReportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.makeReportBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.makeReportBtn.ForeColor = System.Drawing.Color.White;
-            this.makeReportBtn.Image = global::GUI.Properties.Resources.makeReport;
-            this.makeReportBtn.Location = new System.Drawing.Point(394, 248);
-            this.makeReportBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.makeReportBtn.Name = "makeReportBtn";
-            this.makeReportBtn.Size = new System.Drawing.Size(170, 166);
-            this.makeReportBtn.TabIndex = 4;
-            this.makeReportBtn.Text = "Lập báo cáo";
-            this.makeReportBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.makeReportBtn.UseVisualStyleBackColor = false;
-            this.makeReportBtn.Click += new System.EventHandler(this.makeReportBtn_Click);
-            // 
-            // makeBillBtn
-            // 
-            this.makeBillBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.makeBillBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.makeBillBtn.FlatAppearance.BorderSize = 0;
-            this.makeBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.makeBillBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.makeBillBtn.ForeColor = System.Drawing.Color.White;
-            this.makeBillBtn.Image = global::GUI.Properties.Resources.makeBill;
-            this.makeBillBtn.Location = new System.Drawing.Point(394, 70);
-            this.makeBillBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.makeBillBtn.Name = "makeBillBtn";
-            this.makeBillBtn.Size = new System.Drawing.Size(170, 161);
-            this.makeBillBtn.TabIndex = 5;
-            this.makeBillBtn.Text = "Lập hóa đơn";
-            this.makeBillBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.makeBillBtn.UseVisualStyleBackColor = false;
-            this.makeBillBtn.Click += new System.EventHandler(this.makeBillBtn_Click);
-            // 
-            // manageServiceBtn
-            // 
-            this.manageServiceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.manageServiceBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.manageServiceBtn.FlatAppearance.BorderSize = 0;
-            this.manageServiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.manageServiceBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.manageServiceBtn.ForeColor = System.Drawing.Color.White;
-            this.manageServiceBtn.Image = global::GUI.Properties.Resources.manageService;
-            this.manageServiceBtn.Location = new System.Drawing.Point(584, 248);
-            this.manageServiceBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.manageServiceBtn.Name = "manageServiceBtn";
-            this.manageServiceBtn.Size = new System.Drawing.Size(229, 166);
-            this.manageServiceBtn.TabIndex = 6;
-            this.manageServiceBtn.Text = "Quản lý dịch vụ";
-            this.manageServiceBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.manageServiceBtn.UseVisualStyleBackColor = false;
-            this.manageServiceBtn.Click += new System.EventHandler(this.manageServiceBtn_Click);
+            this.changeRegulationBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
+            this.changeRegulationBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.changeRegulationBtn.FlatAppearance.BorderSize = 0;
+            this.changeRegulationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changeRegulationBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.changeRegulationBtn.ForeColor = System.Drawing.Color.White;
+            this.changeRegulationBtn.Image = ((System.Drawing.Image)(resources.GetObject("changeRegulationBtn.Image")));
+            this.changeRegulationBtn.Location = new System.Drawing.Point(675, 72);
+            this.changeRegulationBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.changeRegulationBtn.Name = "changeRegulationBtn";
+            this.changeRegulationBtn.Size = new System.Drawing.Size(325, 260);
+            this.changeRegulationBtn.TabIndex = 6;
+            this.changeRegulationBtn.Text = "Thay đổi quy định";
+            this.changeRegulationBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.changeRegulationBtn.UseVisualStyleBackColor = false;
+            this.changeRegulationBtn.Click += new System.EventHandler(this.manageServiceBtn_Click);
             // 
             // manageBillBtn
             // 
@@ -351,10 +311,10 @@
             this.manageBillBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageBillBtn.ForeColor = System.Drawing.Color.White;
             this.manageBillBtn.Image = global::GUI.Properties.Resources.manageBill;
-            this.manageBillBtn.Location = new System.Drawing.Point(584, 72);
+            this.manageBillBtn.Location = new System.Drawing.Point(774, 354);
             this.manageBillBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageBillBtn.Name = "manageBillBtn";
-            this.manageBillBtn.Size = new System.Drawing.Size(229, 161);
+            this.manageBillBtn.Size = new System.Drawing.Size(226, 253);
             this.manageBillBtn.TabIndex = 7;
             this.manageBillBtn.Text = "Quản lý hóa đơn";
             this.manageBillBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -370,10 +330,10 @@
             this.manageRoomBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageRoomBtn.ForeColor = System.Drawing.Color.White;
             this.manageRoomBtn.Image = global::GUI.Properties.Resources.manageRoom;
-            this.manageRoomBtn.Location = new System.Drawing.Point(831, 70);
+            this.manageRoomBtn.Location = new System.Drawing.Point(368, 72);
             this.manageRoomBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageRoomBtn.Name = "manageRoomBtn";
-            this.manageRoomBtn.Size = new System.Drawing.Size(177, 344);
+            this.manageRoomBtn.Size = new System.Drawing.Size(281, 260);
             this.manageRoomBtn.TabIndex = 10;
             this.manageRoomBtn.Text = "Quản lý phòng";
             this.manageRoomBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -391,15 +351,14 @@
             this.Controls.Add(this.manageClientBtn);
             this.Controls.Add(this.manageRoomBtn);
             this.Controls.Add(this.manageBillBtn);
-            this.Controls.Add(this.manageServiceBtn);
-            this.Controls.Add(this.makeBillBtn);
-            this.Controls.Add(this.makeReportBtn);
+            this.Controls.Add(this.changeRegulationBtn);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.showMenuPTB);
-            this.Controls.Add(this.searchRoomBtn);
-            this.Controls.Add(this.placeRoomBtn);
+            this.Controls.Add(this.manageStaffBtn);
+            this.Controls.Add(this.statisticalBtn);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fStaff";
@@ -427,12 +386,10 @@
         private Button infoButton;
         private Button logOutButton;
         private Button introduceButton;
-        private Button searchRoomBtn;
-        private Button placeRoomBtn;
+        private Button manageStaffBtn;
+        private Button statisticalBtn;
         private Button manageClientBtn;
-        private Button makeReportBtn;
-        private Button makeBillBtn;
-        private Button manageServiceBtn;
+        private Button changeRegulationBtn;
         private Button manageBillBtn;
         private Button manageRoomBtn;
         private Label statusLabel;

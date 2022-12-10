@@ -55,7 +55,7 @@ namespace GUI
             var result = notice.ShowDialog();
             if(result == DialogResult.Yes)
             {
-                this.Hide();
+                this.Close();
                 fLogin f = new fLogin();
                 f.Show();
             }
@@ -67,19 +67,23 @@ namespace GUI
 
         private void infoButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             fInfor infor = new fInfor(set_account);
             var result = infor.ShowDialog();
             if(result == DialogResult.OK)
             {
                 StaffDTO staff = StaffBUS.LoadInformation(set_account);
                 nameLabel.Text = staff.HoTen;
-            }    
+            }
+            this.Show();
         }
 
         private void introduceButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             fIntro intro = new fIntro();
             intro.ShowDialog();
+            this.Show();
         }
 
         private void placeRoomBtn_Click(object sender, EventArgs e)

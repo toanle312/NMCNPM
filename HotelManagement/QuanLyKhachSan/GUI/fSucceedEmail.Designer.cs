@@ -102,6 +102,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fErrorEmail";
             this.Text = "fErrorEmail";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

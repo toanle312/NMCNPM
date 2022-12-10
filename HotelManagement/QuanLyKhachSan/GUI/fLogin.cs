@@ -26,6 +26,7 @@ namespace GUI
                 this.Hide();
                 fAdmin f = new fAdmin(account);
                 f.ShowDialog();
+                //this.Close();
 
             }    
             else if(result == "staff")
@@ -35,6 +36,7 @@ namespace GUI
                 this.Hide();
                 fStaff f = new fStaff(account);
                 f.ShowDialog();
+                //this.Close();
             }
             else MessageBox.Show("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại !!!");
         }
