@@ -1,0 +1,105 @@
+CREATE PROCEDURE [dbo].[GetFullCustomer]
+AS
+BEGIN
+	SELECT * FROM dbo.KHACHHANG
+END
+
+CREATE PROCEDURE [dbo].[UpdateStaff]
+	@MaNV nchar(10), 
+	@HoTen nvarchar(20), 
+	@CMND nchar(15), 
+	@GioiTinh nvarchar(10),
+	@DiaChi nchar(50), 
+	@DienThoai char(11)
+AS
+BEGIN 
+	UPDATE NHANVIEN
+	SET 
+		HoTen = @HoTen,
+		[CMND/CCCD] = @CMND,
+		GioiTinh = @GioiTinh,
+		DiaChi = @DiaChi
+	WHERE MaNV = @MaNV
+END
+
+CREATE PROCEDURE [dbo].[UpdateInforCus] 
+	@cmnd nchar(10),
+	@HoTen nvarchar(50),
+	@QuocTich  nvarchar(20),
+	@DiaChi nvarchar(50),
+	@DienThoai char(11)
+AS
+BEGIN
+	UPDATE KHACHHANG 
+	SET 
+		HoTen = @HoTen,
+		QuocTich = @QuocTich,
+		DiaChi = @DiaChi,
+		DienThoai = @DienThoai
+	WHERE 
+		CMND = @cmnd
+	if @@ROWCOUNT > 0 return 1
+	else return 0;
+END
+
+CREATE PROCEDURE [dbo].[InsertStaff]
+	@MaNV nchar(10), 
+	@HoTen nvarchar(20), 
+	@CMND nchar(15), 
+	@GioiTinh nvarchar(10),
+	@DiaChi nchar(50), 
+	@DienThoai char(11), 
+	@MaTK nchar(20)
+AS
+BEGIN
+	INSERT INTO dbo.TAIKHOAN(MaTK, EmailXacNhan) VALUES (@MaTK, @MaTK);
+	INSERT INTO dbo.NHANVIEN VALUES (@MaNV, @GioiTinh, @CMND, @HoTen, @DiaChi, @DienThoai, @MaTK);
+END
+
+CREATE PROCEDURE [dbo].[InsertCustomer]
+	@cmnd nchar(10),
+	@HoTen nvarchar(50),
+	@QuocTich  nvarchar(20),
+	@DiaChi nvarchar(50),
+	@DienThoai char(11)
+AS
+BEGIN
+	INSERT INTO KHACHHANG VALUES(@cmnd,@DiaChi,@DienThoai,@QuocTich,@HoTen);
+	if (@@ROWCOUNT > 0) return 1;
+	else return 0;
+END
+
+CREATE PROCEDURE [dbo].[GetInforCusByCMND] @cmnd nCHAR(10)
+AS
+BEGIN
+	SELECT * FROM KHACHHANG KH WHERE KH.CMND = @cmnd
+END
+
+CREATE PROCEDURE [dbo].[GetInforByMaNV]
+	@MaNV nchar(10)
+AS
+BEGIN
+	SELECT * FROM NHANVIEN WHERE MaNV = @MaNV
+END
+
+CREATE PROCEDURE [dbo].[GetFullStaff]
+AS
+BEGIN
+	SELECT * FROM dbo.NHANVIEN
+END
+
+CREATE PROCEDURE [dbo].[DeleteStaff]
+	@MaNV nchar(10),
+	@MaTK nchar(20)
+AS
+BEGIN
+	DELETE FROM NHANVIEN WHERE MaNV = @MaNV
+	DELETE FROM TAIKHOAN WHERE MaTK = @MaTK
+END
+
+CREATE PROCEDURE [dbo].[DeleteCustomer]
+	@cmnd nCHAR(10)
+AS
+BEGIN
+	DELETE FROM KHACHHANG WHERE CMND = @cmnd
+END
