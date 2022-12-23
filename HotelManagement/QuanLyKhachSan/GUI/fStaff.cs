@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -70,11 +71,13 @@ namespace GUI
             this.Hide();
             fInfor infor = new fInfor(set_account);
             var result = infor.ShowDialog();
+
             if(result == DialogResult.OK)
             {
                 StaffDTO staff = StaffBUS.LoadInformation(set_account);
                 nameLabel.Text = staff.HoTen;
             }
+
             this.Show();
         }
 
@@ -93,6 +96,10 @@ namespace GUI
 
         private void searchRoomBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fSearchRoom searchRoom = new fSearchRoom();
+            searchRoom.ShowDialog();
+            this.Show();
 
         }
 
@@ -103,7 +110,10 @@ namespace GUI
 
         private void makeReportBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fReport report = new fReport();
+            report.ShowDialog();
+            this.Show();
         }
 
         private void manageClientBtn_Click(object sender, EventArgs e)
@@ -113,7 +123,10 @@ namespace GUI
 
         private void manageServiceBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fService service = new fService();
+            service.ShowDialog();
+            this.Show();
         }
 
         private void manageBillBtn_Click(object sender, EventArgs e)

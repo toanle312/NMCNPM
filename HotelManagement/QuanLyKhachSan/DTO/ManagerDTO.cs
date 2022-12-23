@@ -42,24 +42,24 @@ namespace DTO
 
         public ManagerDTO(string maQL, string maTK, string gioiTinh, string CCCD, string hoTen, string diaChi, string dienThoai)
         {
-            _maTK = maTK;
-            _gioiTinh = gioiTinh;
-            _dienThoai = dienThoai;
-            _hoTen = hoTen;
-            _cccd = CCCD;
-            _diaChi = diaChi;
-            _maQL = maQL;
+            this.MaTK = maTK;
+            this.GioiTinh = gioiTinh;
+            this.DienThoai = dienThoai;
+            this.HoTen = hoTen;
+            this.CCCD = CCCD;
+            this.DiaChi = diaChi;
+            this.MaQL = maQL;
         }
 
         public ManagerDTO(DataRow row)
         {
-            _maTK = row["MaTK"].ToString();
-            _gioiTinh = row["GioiTinh"].ToString(); ;
-            _dienThoai = row["DienThoai"].ToString(); ;
-            _hoTen = row["HoTen"].ToString(); ;
-            _cccd = row["CMND/CCCD"].ToString(); ;
-            _diaChi = row["DiaChi"].ToString(); ;
-            _maQL = row["MaQL"].ToString(); ;
+            this.MaTK = row["MaTK"].ToString();
+            this.GioiTinh = row["GioiTinh"].ToString(); ;
+            this.DienThoai = row["DienThoai"].ToString(); ;
+            this.HoTen = row["HoTen"].ToString(); ;
+            this.CCCD = row["CMND/CCCD"].ToString(); ;
+            this.DiaChi = row["DiaChi"].ToString(); ;
+            this.MaQL = row["MaQL"].ToString(); ;
         }
 
         #endregion

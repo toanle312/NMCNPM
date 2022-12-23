@@ -69,7 +69,7 @@ namespace GUI
             bool isFill = CheckFillInText(new Control[] { nameTXB, addressTXB, idTXB, contactTXB });
             if(!isFill)
             {
-                MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Các ô không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
