@@ -125,5 +125,10 @@ namespace GUI
         {
 
         }
+
+        private void fAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

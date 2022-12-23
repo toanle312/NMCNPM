@@ -11,7 +11,8 @@ namespace DAO
     public class DataProvider
     {
         private static DataProvider _instance;
-        private string _connectionStr = @"Data Source=LAPTOP-M3NT3CHJ\SQLEXPRESS;Initial Catalog=QLKS_GROUP11;Integrated Security=True";
+        private string _connectionStr = "Data Source=DESKTOP-5EU7M8G;Initial Catalog=QLKHACHSAN;Integrated Security=True";
+
         private DataProvider() { }
 
         public SqlConnection connectSQL()
@@ -74,7 +75,18 @@ namespace DAO
                 }
             }
         }
-
+        public int ExecuteNonQuery(string query)
+        {
+            int result = 0;
+            using (SqlConnection connection = new SqlConnection(_connectionStr))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                result = command.ExecuteNonQuery();
+                connection.Close();
+            }
+            return result;
+        }
         public static DataProvider Instance
         {
             get { if (_instance == null) _instance = new DataProvider(); return _instance; }
