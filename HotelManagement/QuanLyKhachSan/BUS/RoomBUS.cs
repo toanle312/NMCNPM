@@ -13,15 +13,7 @@ namespace BUS
     {
         public static List<RoomDTO> LoadRoomList()
         {
-            DataTable data = RoomDAO.Instance.LoadRoomListDAO();
-
-            List<RoomDTO> roomList = new List<RoomDTO>();
-
-            foreach (DataRow item in data.Rows)
-            {
-                RoomDTO room = new RoomDTO(item);
-                roomList.Add(room);
-            }
+            List<RoomDTO> roomList = RoomDAO.Instance.LoadRoomList();
 
             return roomList;
         }

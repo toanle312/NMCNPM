@@ -37,7 +37,7 @@ namespace GUI
             {
                 Button btn = new Button() { Width = RoomDAO.RoomWidth, Height = RoomDAO.RoomHeight };
                 
-                btn.Text = room.MaPhong + Environment.NewLine + room.TrangThai;
+                btn.Text = room.MaPhong + Environment.NewLine + room.TinhTrang;
                 btn.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
                 btn.FlatStyle = FlatStyle.Flat;
                 btn.FlatAppearance.BorderSize = 3;
@@ -45,7 +45,7 @@ namespace GUI
                 btn.Click += Btn_Click;
                 btn.Tag = room;
 
-                switch(room.TrangThai)
+                switch(room.TinhTrang)
                 {
                     case "Trống":
                         btn.BackColor = Color.FromArgb(102, 255, 102);
@@ -98,7 +98,7 @@ namespace GUI
                     break;
             }
 
-            status.Text = room.TrangThai.Trim();
+            status.Text = room.TinhTrang.Trim();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -189,7 +189,7 @@ namespace GUI
                    
                     foreach (var item in roomList)
                     {
-                        if (item.TrangThai.Trim() == checkStatus.Text)
+                        if (item.TinhTrang.Trim() == checkStatus.Text)
                         {
                             filterRoom.Add(item);
                         }
@@ -210,7 +210,7 @@ namespace GUI
                     
                     foreach (var item in roomList)
                     {
-                        if (item.LoaiPhong.Trim() == checkType.Text && item.TrangThai.Trim() == checkStatus.Text)
+                        if (item.LoaiPhong.Trim() == checkType.Text && item.TinhTrang.Trim() == checkStatus.Text)
                         {
                             filterRoom.Add(item);
                         }
