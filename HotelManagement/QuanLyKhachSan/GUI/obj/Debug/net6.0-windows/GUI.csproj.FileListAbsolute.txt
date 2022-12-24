@@ -80,3 +80,9 @@ C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.pdb
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
+C:\Users\PC\Source\Repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fRoomManagement.resources
+C:\Users\PC\Source\Repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fAddFood.resources
+C:\Users\PC\Source\Repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fUpdateRoom.resources
+C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fStatistics.resources
+C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fDensityStatistics.resources
+C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fRevenueStatistics.resources
