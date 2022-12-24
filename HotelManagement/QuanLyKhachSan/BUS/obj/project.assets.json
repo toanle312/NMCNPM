@@ -509,37 +509,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\obj\\",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\BUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
-              "projectPath": "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj"
+            "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj"
             },
-            "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
-              "projectPath": "D:\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
+            "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\toanle312\\NMCNPM\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
             }
           }
         }
@@ -575,7 +573,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
