@@ -63,5 +63,10 @@ namespace GUI
             fUpdateRoom fu = new fUpdateRoom();
             fu.Show();
         }
+
+        private void btn_QuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

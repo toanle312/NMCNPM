@@ -36,7 +36,12 @@ namespace GUI
                 item.SubItems.Add(phieuThuePhong.Ngoaiquoc);
                 listView1.Items.Add(item);
             }
-            
+            List<string> strings = HoaDonDAO.Instance.get_dsphongtrong();
+            foreach (string s in strings)
+            {
+                maphong.Items.Add(s);
+            }
+
         }
 
         public string Cmnd { get => _cmnd; set => _cmnd = value; }
@@ -97,6 +102,14 @@ namespace GUI
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fAddCustomer fAddCustomer = new fAddCustomer();
+            this.Hide();
+            fAddCustomer.ShowDialog();
+            this.Show();
         }
     }
 }

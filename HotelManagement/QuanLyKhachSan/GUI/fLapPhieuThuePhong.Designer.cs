@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmnd = new System.Windows.Forms.TextBox();
-            this.maphong = new System.Windows.Forms.TextBox();
             this.songuoi = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.exitPTB = new System.Windows.Forms.PictureBox();
+            this.maphong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.exitPTB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,14 +75,6 @@
             this.cmnd.Name = "cmnd";
             this.cmnd.Size = new System.Drawing.Size(100, 27);
             this.cmnd.TabIndex = 2;
-            // 
-            // maphong
-            // 
-            this.maphong.Location = new System.Drawing.Point(168, 223);
-            this.maphong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.maphong.Name = "maphong";
-            this.maphong.Size = new System.Drawing.Size(100, 27);
-            this.maphong.TabIndex = 3;
             // 
             // songuoi
             // 
@@ -148,6 +140,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Thêm khách hàng";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -222,12 +215,22 @@
             this.exitPTB.TabStop = false;
             this.exitPTB.Click += new System.EventHandler(this.exitPTB_Click);
             // 
+            // maphong
+            // 
+            this.maphong.FormattingEnabled = true;
+            this.maphong.Location = new System.Drawing.Point(168, 222);
+            this.maphong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.maphong.Name = "maphong";
+            this.maphong.Size = new System.Drawing.Size(100, 28);
+            this.maphong.TabIndex = 16;
+            // 
             // fLapPhieuThuePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(879, 610);
+            this.Controls.Add(this.maphong);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button2);
@@ -237,7 +240,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.songuoi);
-            this.Controls.Add(this.maphong);
             this.Controls.Add(this.cmnd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -257,7 +259,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox cmnd;
-        private System.Windows.Forms.TextBox maphong;
         private System.Windows.Forms.ComboBox songuoi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -272,5 +273,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private PictureBox exitPTB;
+        private ComboBox maphong;
     }
 }

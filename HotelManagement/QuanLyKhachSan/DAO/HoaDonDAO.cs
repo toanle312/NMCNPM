@@ -117,5 +117,16 @@ namespace DAO
             DataProvider.Instance.ExecuteNoneQuery(query1);
             DataProvider.Instance.ExecuteNoneQuery(query2);
         }
+        public List<string> get_dsphongtrong()
+        {
+            List<string> strings = new List<string>();
+            string query = "sp_danhsachphongtrong";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow r in dt.Rows)
+            {
+                strings.Add(r["MaPhong"].ToString());
+            }
+            return strings;
+        }
     }
 }

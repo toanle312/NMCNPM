@@ -95,6 +95,12 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text.Equals(""))
+            {
+                MessageBox.Show("Chọn hoá đơn cần xoá");
+
+                return;
+            }
             HoaDonDAO.Instance.delete_HoaDon(hoadons[curpos].Mahd);
             curpos = dataGridView1.CurrentCell.RowIndex;
             dataGridView1.DataSource = null;
@@ -167,6 +173,15 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (textBox8.Text.Equals(""))
+            {
+                MessageBox.Show("Chọn hoá đơn cần thanh toán");
+                return;
+            }
+            textBox8.Text = "";
+            textBox7.Text = "";
+            textBox6.Text = "";
+            textBox5.Text = "";
             listView2.Items.Clear();
             this.Hide();
             fInHoaDon fInHoaDon = new fInHoaDon(hoadons1[curpos].CMND);

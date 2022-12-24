@@ -109,7 +109,10 @@ namespace GUI
 
         private void makeBillBtn_Click(object sender, EventArgs e)
         {
-
+            fLapPhieuThuePhong fLapHoaDon = new fLapPhieuThuePhong();
+            this.Hide();
+            fLapHoaDon.ShowDialog();
+            this.Show();
         }
 
         private void makeReportBtn_Click(object sender, EventArgs e)
@@ -149,7 +152,7 @@ namespace GUI
             this.Hide();
             fRoomManagement room = new fRoomManagement();
             room.ShowDialog();
-            this.Close();
+            this.Show();
         }
     }
 }
