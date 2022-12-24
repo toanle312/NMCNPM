@@ -24,17 +24,17 @@ namespace DTO
         public AccountDTO() { }
         public AccountDTO(string userName, string passWord, string email)
         {
-            this._maTK = userName;
-            this._matKhau = passWord;
-            this._email = email;
+            this.MaTK = userName;
+            this.MatKhau = passWord;
+            this.Email = email;
          }
         public AccountDTO(DataRow row)
         {
-            this._maTK = row["MaTK"].ToString();
+            this.MaTK = row["MaTK"].ToString();
 
-            this._matKhau = row["MatKhau"].ToString();
+            this.MatKhau = row["MatKhau"].ToString();
 
-            this._email = row["EmailXacNhan"].ToString();
+            this.Email = row["EmailXacNhan"].ToString();
         }
         #endregion
     }

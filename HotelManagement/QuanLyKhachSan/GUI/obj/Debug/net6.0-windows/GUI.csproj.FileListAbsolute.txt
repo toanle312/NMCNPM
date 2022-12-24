@@ -39,3 +39,6 @@ D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fForgo
 D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fSucceedEmail.resources
 D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fAdmin.resources
 D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fInforAdmin.resources
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fSearchRoom.resources
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fService.resources
+D:\NMCNPM\HotelManagement\QuanLyKhachSan\GUI\obj\Debug\net6.0-windows\GUI.fReport.resources
