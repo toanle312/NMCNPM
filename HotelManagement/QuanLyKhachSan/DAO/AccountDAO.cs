@@ -32,6 +32,5 @@ namespace DAO
 
             return data;
         }
-
     }
 }

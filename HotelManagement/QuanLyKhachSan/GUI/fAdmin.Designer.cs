@@ -362,6 +362,7 @@
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fStaff";
+            this.Load += new System.EventHandler(this.fAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.showMenuPTB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPTB)).EndInit();
             this.menuPanel.ResumeLayout(false);
