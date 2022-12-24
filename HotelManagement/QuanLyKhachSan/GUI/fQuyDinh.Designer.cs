@@ -43,18 +43,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(85, 18);
+            this.label1.Location = new System.Drawing.Point(68, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 43);
+            this.label1.Size = new System.Drawing.Size(350, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUY ĐỊNH KHÁCH SẠN";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.changeRegulation;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -62,9 +64,10 @@
             // ptbClose
             // 
             this.ptbClose.Image = global::GUI.Properties.Resources.exit;
-            this.ptbClose.Location = new System.Drawing.Point(738, 11);
+            this.ptbClose.Location = new System.Drawing.Point(590, 9);
+            this.ptbClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbClose.Name = "ptbClose";
-            this.ptbClose.Size = new System.Drawing.Size(50, 50);
+            this.ptbClose.Size = new System.Drawing.Size(40, 40);
             this.ptbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbClose.TabIndex = 2;
             this.ptbClose.TabStop = false;
@@ -78,9 +81,10 @@
             this.columnHeader2,
             this.columnHeader3});
             this.lsvQD.GridLines = true;
-            this.lsvQD.Location = new System.Drawing.Point(100, 103);
+            this.lsvQD.Location = new System.Drawing.Point(80, 82);
+            this.lsvQD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lsvQD.Name = "lsvQD";
-            this.lsvQD.Size = new System.Drawing.Size(593, 270);
+            this.lsvQD.Size = new System.Drawing.Size(475, 217);
             this.lsvQD.TabIndex = 3;
             this.lsvQD.UseCompatibleStateImageBehavior = false;
             this.lsvQD.View = System.Windows.Forms.View.Details;
@@ -104,15 +108,16 @@
             // 
             // fQuyDinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(640, 360);
             this.Controls.Add(this.lsvQD);
             this.Controls.Add(this.ptbClose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fQuyDinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fQuyDinh";

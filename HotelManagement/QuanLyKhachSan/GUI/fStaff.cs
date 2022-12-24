@@ -91,7 +91,10 @@ namespace GUI
 
         private void placeRoomBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fLapPhieuThuePhong place = new fLapPhieuThuePhong();
+            place.ShowDialog();
+            this.Show();
         }
 
         private void searchRoomBtn_Click(object sender, EventArgs e)
@@ -118,7 +121,10 @@ namespace GUI
 
         private void manageClientBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fCustomer customer = new fCustomer();
+            customer.ShowDialog();
+            this.Show();
         }
 
         private void manageServiceBtn_Click(object sender, EventArgs e)
@@ -131,12 +137,14 @@ namespace GUI
 
         private void manageBillBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fQuanLyHoaDon bill = new fQuanLyHoaDon();
+            bill.ShowDialog();
+            this.Show();
         }
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

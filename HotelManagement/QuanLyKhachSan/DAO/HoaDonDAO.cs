@@ -71,7 +71,7 @@ namespace DAO
         public int delete_HoaDon(string mahd)
         {
             string query = "sp_xoahoadon '" + mahd + "'";
-            return DataProvider.Instance.ExecuteNonQuery(query);
+            return DataProvider.Instance.ExecuteNoneQuery(query);
 
         }
         public DataRow thanhtoan_hoadon(string cmnd)
@@ -114,8 +114,8 @@ namespace DAO
         {
             string query1 = "sp_capnhatthanhtien '" + mahd + "'";
             string query2 = "sp_capnhathoadon '" + mahd + "'";
-            DataProvider.Instance.ExecuteNonQuery(query1);
-            DataProvider.Instance.ExecuteNonQuery(query2);
+            DataProvider.Instance.ExecuteNoneQuery(query1);
+            DataProvider.Instance.ExecuteNoneQuery(query2);
         }
     }
 }

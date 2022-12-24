@@ -177,13 +177,14 @@
             // 
             // reportView
             // 
+            this.reportView.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.reportView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
             this.reportView.FullRowSelect = true;
             this.reportView.GridLines = true;
-            this.reportView.Location = new System.Drawing.Point(53, 105);
+            this.reportView.Location = new System.Drawing.Point(51, 99);
             this.reportView.Name = "reportView";
             this.reportView.Size = new System.Drawing.Size(617, 378);
             this.reportView.TabIndex = 4;

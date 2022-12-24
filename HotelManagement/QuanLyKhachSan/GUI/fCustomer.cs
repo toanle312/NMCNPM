@@ -88,7 +88,7 @@ namespace GUI
 
         private void ptbClose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
     }
 }

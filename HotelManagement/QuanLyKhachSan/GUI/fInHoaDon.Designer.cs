@@ -268,7 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI.Properties.Resources.background1;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(982, 712);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.label7);

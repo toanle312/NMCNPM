@@ -22,3 +22,15 @@ C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\refint\DTO.dll
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.pdb
 C:\Users\PC\source\repos\toanle312\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.dll
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\bin\Debug\net6.0\DTO.pdb
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.dll
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\DTO.pdb
+D:\NMCNPM\NMCNPM\HotelManagement\QuanLyKhachSan\DTO\obj\Debug\net6.0\ref\DTO.dll

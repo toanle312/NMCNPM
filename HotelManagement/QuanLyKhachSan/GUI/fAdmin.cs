@@ -91,14 +91,6 @@ namespace GUI
 
         }
 
-        private void searchRoomBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fMaStaff maStaff = new fMaStaff();
-            maStaff.ShowDialog();
-            this.Show();
-        }
-
         private void makeBillBtn_Click(object sender, EventArgs e)
         {
 
@@ -117,17 +109,12 @@ namespace GUI
             this.Show();
         }
 
-        private void manageServiceBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            fQuyDinh quydinh = new fQuyDinh();
-            quydinh.ShowDialog();
-            this.Show();
-        }
-
         private void manageBillBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fQuanLyHoaDon bill = new fQuanLyHoaDon();
+            bill.ShowDialog();
+            this.Show();
         }
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
@@ -138,6 +125,27 @@ namespace GUI
         private void fAdmin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void mangeStaffBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fMaStaff maStaff = new fMaStaff();
+            maStaff.ShowDialog();
+            this.Show();
+        }
+
+        private void thongKeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeRegulationBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fQuyDinh quydinh = new fQuyDinh();
+            quydinh.ShowDialog();
+            this.Show();
         }
     }
 }

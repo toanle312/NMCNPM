@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI.Properties.Resources._4907157;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(879, 610);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.listView1);
