@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,34 +9,32 @@ namespace DTO
 {
     public class RoomDTO
     {
-        private string _maphong;
-        private string _trangthai;
-        private string _loaiphong;
+        #region Properties
+        private string _maPhong;
+        private string _tinhTrang;
+        private string _loaiPhong;
 
-        public string MaPhong { get { return _maphong; } set { _maphong = value; } }
+        public string MaPhong { get { return _maPhong; } set { _maPhong = value; } }
+        public string TinhTrang { get { return _tinhTrang; } set { _tinhTrang = value; } }
+        public string LoaiPhong { get { return _loaiPhong; } set { _loaiPhong = value; } }
+        #endregion
 
-        public string TrangThai { get { return _trangthai; } set { _trangthai = value; } }
-
-        public string LoaiPhong { get { return _loaiphong; } set { _loaiphong = value; } }
-
-        public RoomDTO()
+        #region Contructors
+        public RoomDTO() { }
+        public RoomDTO(string maPhong, string tinhTrang, string loaiPhong)
         {
-
+            this._maPhong = maPhong;
+            this._tinhTrang = tinhTrang;
+            this._loaiPhong = loaiPhong;
         }
-
-        public RoomDTO(string maphong, string trangthai, string loaiphong)
-        {
-            this.MaPhong = maphong;
-            this.TrangThai = trangthai;
-            this.LoaiPhong = loaiphong;
-        }
-
         public RoomDTO(DataRow row)
         {
-            this.MaPhong = row["MaPhong"].ToString();
-            this.TrangThai = row["TrangThai"].ToString();
-            this.LoaiPhong = row["LoaiPhong"].ToString();
-        }
+            this._maPhong = row["MaPhong"].ToString();
 
+            this._tinhTrang = row["TrangThai"].ToString();
+
+            this._loaiPhong = row["LoaiPhong"].ToString();
+        }
+        #endregion
     }
 }
