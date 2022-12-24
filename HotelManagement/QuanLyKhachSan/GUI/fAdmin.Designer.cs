@@ -60,9 +60,10 @@
             // 
             this.showMenuPTB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showMenuPTB.Image = ((System.Drawing.Image)(resources.GetObject("showMenuPTB.Image")));
-            this.showMenuPTB.Location = new System.Drawing.Point(12, 12);
+            this.showMenuPTB.Location = new System.Drawing.Point(15, 15);
+            this.showMenuPTB.Margin = new System.Windows.Forms.Padding(4);
             this.showMenuPTB.Name = "showMenuPTB";
-            this.showMenuPTB.Size = new System.Drawing.Size(40, 40);
+            this.showMenuPTB.Size = new System.Drawing.Size(50, 50);
             this.showMenuPTB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.showMenuPTB.TabIndex = 0;
             this.showMenuPTB.TabStop = false;
@@ -73,9 +74,10 @@
             this.exitPTB.BackColor = System.Drawing.Color.Transparent;
             this.exitPTB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitPTB.Image = ((System.Drawing.Image)(resources.GetObject("exitPTB.Image")));
-            this.exitPTB.Location = new System.Drawing.Point(1020, 12);
+            this.exitPTB.Location = new System.Drawing.Point(1275, 15);
+            this.exitPTB.Margin = new System.Windows.Forms.Padding(4);
             this.exitPTB.Name = "exitPTB";
-            this.exitPTB.Size = new System.Drawing.Size(30, 30);
+            this.exitPTB.Size = new System.Drawing.Size(38, 38);
             this.exitPTB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exitPTB.TabIndex = 1;
             this.exitPTB.TabStop = false;
@@ -90,7 +92,7 @@
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Margin = new System.Windows.Forms.Padding(0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(379, 676);
+            this.menuPanel.Size = new System.Drawing.Size(473, 845);
             this.menuPanel.TabIndex = 2;
             // 
             // avatarPanel
@@ -103,7 +105,7 @@
             this.avatarPanel.Location = new System.Drawing.Point(0, 0);
             this.avatarPanel.Margin = new System.Windows.Forms.Padding(0);
             this.avatarPanel.Name = "avatarPanel";
-            this.avatarPanel.Size = new System.Drawing.Size(379, 233);
+            this.avatarPanel.Size = new System.Drawing.Size(474, 291);
             this.avatarPanel.TabIndex = 1;
             // 
             // nameLabel
@@ -111,9 +113,10 @@
             this.nameLabel.AutoSize = true;
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameLabel.Location = new System.Drawing.Point(71, 190);
+            this.nameLabel.Location = new System.Drawing.Point(89, 238);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(124, 32);
+            this.nameLabel.Size = new System.Drawing.Size(143, 37);
             this.nameLabel.TabIndex = 2;
             this.nameLabel.Text = "Quản Lý";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,9 +125,10 @@
             // 
             this.statusLabel.AutoSize = true;
             this.statusLabel.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.statusLabel.Location = new System.Drawing.Point(3, 1);
+            this.statusLabel.Location = new System.Drawing.Point(4, 1);
+            this.statusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(115, 32);
+            this.statusLabel.Size = new System.Drawing.Size(133, 37);
             this.statusLabel.TabIndex = 1;
             this.statusLabel.Text = "Quản lý";
             // 
@@ -132,9 +136,10 @@
             // 
             this.hideMenuPTB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hideMenuPTB.Image = global::GUI.Properties.Resources.hide;
-            this.hideMenuPTB.Location = new System.Drawing.Point(336, 3);
+            this.hideMenuPTB.Location = new System.Drawing.Point(420, 4);
+            this.hideMenuPTB.Margin = new System.Windows.Forms.Padding(4);
             this.hideMenuPTB.Name = "hideMenuPTB";
-            this.hideMenuPTB.Size = new System.Drawing.Size(40, 40);
+            this.hideMenuPTB.Size = new System.Drawing.Size(50, 50);
             this.hideMenuPTB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hideMenuPTB.TabIndex = 0;
             this.hideMenuPTB.TabStop = false;
@@ -143,9 +148,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(111, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(139, 46);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -157,10 +163,10 @@
             this.functionPanel.Controls.Add(this.introduceButton);
             this.functionPanel.Controls.Add(this.infoButton);
             this.functionPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.functionPanel.Location = new System.Drawing.Point(0, 233);
+            this.functionPanel.Location = new System.Drawing.Point(0, 291);
             this.functionPanel.Margin = new System.Windows.Forms.Padding(0);
             this.functionPanel.Name = "functionPanel";
-            this.functionPanel.Size = new System.Drawing.Size(379, 443);
+            this.functionPanel.Size = new System.Drawing.Size(474, 554);
             this.functionPanel.TabIndex = 2;
             // 
             // logOutButton
@@ -175,10 +181,10 @@
             this.logOutButton.ForeColor = System.Drawing.Color.Black;
             this.logOutButton.Image = global::GUI.Properties.Resources.logout__1_;
             this.logOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutButton.Location = new System.Drawing.Point(15, 121);
+            this.logOutButton.Location = new System.Drawing.Point(19, 151);
             this.logOutButton.Margin = new System.Windows.Forms.Padding(0);
             this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(177, 34);
+            this.logOutButton.Size = new System.Drawing.Size(221, 42);
             this.logOutButton.TabIndex = 10;
             this.logOutButton.Text = "Đăng xuất";
             this.logOutButton.UseVisualStyleBackColor = false;
@@ -197,10 +203,10 @@
             this.introduceButton.ForeColor = System.Drawing.Color.Black;
             this.introduceButton.Image = global::GUI.Properties.Resources.introduce__1_;
             this.introduceButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.introduceButton.Location = new System.Drawing.Point(12, 66);
+            this.introduceButton.Location = new System.Drawing.Point(15, 82);
             this.introduceButton.Margin = new System.Windows.Forms.Padding(0);
             this.introduceButton.Name = "introduceButton";
-            this.introduceButton.Size = new System.Drawing.Size(178, 34);
+            this.introduceButton.Size = new System.Drawing.Size(222, 42);
             this.introduceButton.TabIndex = 9;
             this.introduceButton.Text = "Giới thiệu";
             this.introduceButton.UseVisualStyleBackColor = false;
@@ -219,10 +225,10 @@
             this.infoButton.ForeColor = System.Drawing.Color.Black;
             this.infoButton.Image = global::GUI.Properties.Resources.info;
             this.infoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infoButton.Location = new System.Drawing.Point(15, 19);
+            this.infoButton.Location = new System.Drawing.Point(19, 24);
             this.infoButton.Margin = new System.Windows.Forms.Padding(0);
             this.infoButton.Name = "infoButton";
-            this.infoButton.Size = new System.Drawing.Size(246, 34);
+            this.infoButton.Size = new System.Drawing.Size(308, 42);
             this.infoButton.TabIndex = 0;
             this.infoButton.Text = "Thông tin tài khoản";
             this.infoButton.UseVisualStyleBackColor = false;
@@ -236,10 +242,10 @@
             this.statisticalBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.statisticalBtn.ForeColor = System.Drawing.Color.White;
             this.statisticalBtn.Image = ((System.Drawing.Image)(resources.GetObject("statisticalBtn.Image")));
-            this.statisticalBtn.Location = new System.Drawing.Point(62, 70);
+            this.statisticalBtn.Location = new System.Drawing.Point(78, 88);
             this.statisticalBtn.Margin = new System.Windows.Forms.Padding(0);
             this.statisticalBtn.Name = "statisticalBtn";
-            this.statisticalBtn.Size = new System.Drawing.Size(280, 262);
+            this.statisticalBtn.Size = new System.Drawing.Size(350, 328);
             this.statisticalBtn.TabIndex = 8;
             this.statisticalBtn.Text = "Thống kê";
             this.statisticalBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -254,10 +260,10 @@
             this.manageStaffBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageStaffBtn.ForeColor = System.Drawing.Color.White;
             this.manageStaffBtn.Image = ((System.Drawing.Image)(resources.GetObject("manageStaffBtn.Image")));
-            this.manageStaffBtn.Location = new System.Drawing.Point(62, 354);
+            this.manageStaffBtn.Location = new System.Drawing.Point(78, 442);
             this.manageStaffBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageStaffBtn.Name = "manageStaffBtn";
-            this.manageStaffBtn.Size = new System.Drawing.Size(280, 253);
+            this.manageStaffBtn.Size = new System.Drawing.Size(350, 316);
             this.manageStaffBtn.TabIndex = 9;
             this.manageStaffBtn.Text = "Quản lý nhân viên";
             this.manageStaffBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -273,10 +279,10 @@
             this.manageClientBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageClientBtn.ForeColor = System.Drawing.Color.White;
             this.manageClientBtn.Image = global::GUI.Properties.Resources.manageClient;
-            this.manageClientBtn.Location = new System.Drawing.Point(368, 354);
+            this.manageClientBtn.Location = new System.Drawing.Point(460, 442);
             this.manageClientBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageClientBtn.Name = "manageClientBtn";
-            this.manageClientBtn.Size = new System.Drawing.Size(380, 253);
+            this.manageClientBtn.Size = new System.Drawing.Size(475, 316);
             this.manageClientBtn.TabIndex = 3;
             this.manageClientBtn.Text = "Quản lý thông tin khách hàng";
             this.manageClientBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -292,10 +298,10 @@
             this.changeRegulationBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.changeRegulationBtn.ForeColor = System.Drawing.Color.White;
             this.changeRegulationBtn.Image = ((System.Drawing.Image)(resources.GetObject("changeRegulationBtn.Image")));
-            this.changeRegulationBtn.Location = new System.Drawing.Point(675, 72);
+            this.changeRegulationBtn.Location = new System.Drawing.Point(844, 90);
             this.changeRegulationBtn.Margin = new System.Windows.Forms.Padding(0);
             this.changeRegulationBtn.Name = "changeRegulationBtn";
-            this.changeRegulationBtn.Size = new System.Drawing.Size(325, 260);
+            this.changeRegulationBtn.Size = new System.Drawing.Size(406, 325);
             this.changeRegulationBtn.TabIndex = 6;
             this.changeRegulationBtn.Text = "Thay đổi quy định";
             this.changeRegulationBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -311,10 +317,10 @@
             this.manageBillBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageBillBtn.ForeColor = System.Drawing.Color.White;
             this.manageBillBtn.Image = global::GUI.Properties.Resources.manageBill;
-            this.manageBillBtn.Location = new System.Drawing.Point(774, 354);
+            this.manageBillBtn.Location = new System.Drawing.Point(968, 442);
             this.manageBillBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageBillBtn.Name = "manageBillBtn";
-            this.manageBillBtn.Size = new System.Drawing.Size(226, 253);
+            this.manageBillBtn.Size = new System.Drawing.Size(282, 316);
             this.manageBillBtn.TabIndex = 7;
             this.manageBillBtn.Text = "Quản lý hóa đơn";
             this.manageBillBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -330,10 +336,10 @@
             this.manageRoomBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageRoomBtn.ForeColor = System.Drawing.Color.White;
             this.manageRoomBtn.Image = global::GUI.Properties.Resources.manageRoom;
-            this.manageRoomBtn.Location = new System.Drawing.Point(368, 72);
+            this.manageRoomBtn.Location = new System.Drawing.Point(460, 90);
             this.manageRoomBtn.Margin = new System.Windows.Forms.Padding(0);
             this.manageRoomBtn.Name = "manageRoomBtn";
-            this.manageRoomBtn.Size = new System.Drawing.Size(281, 260);
+            this.manageRoomBtn.Size = new System.Drawing.Size(351, 325);
             this.manageRoomBtn.TabIndex = 10;
             this.manageRoomBtn.Text = "Quản lý phòng";
             this.manageRoomBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -342,11 +348,11 @@
             // 
             // fAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.ClientSize = new System.Drawing.Size(1328, 841);
             this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.manageClientBtn);
             this.Controls.Add(this.manageRoomBtn);
@@ -359,6 +365,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fStaff";

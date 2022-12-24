@@ -93,7 +93,10 @@ namespace GUI
 
         private void searchRoomBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fMaStaff maStaff = new fMaStaff();
+            maStaff.ShowDialog();
+            this.Show();
         }
 
         private void makeBillBtn_Click(object sender, EventArgs e)
@@ -108,12 +111,18 @@ namespace GUI
 
         private void manageClientBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fCustomer cus = new fCustomer();
+            cus.ShowDialog();
+            this.Show();
         }
 
         private void manageServiceBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fQuyDinh quydinh = new fQuyDinh();
+            quydinh.ShowDialog();
+            this.Show();
         }
 
         private void manageBillBtn_Click(object sender, EventArgs e)
@@ -123,7 +132,7 @@ namespace GUI
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void fAdmin_Load(object sender, EventArgs e)
