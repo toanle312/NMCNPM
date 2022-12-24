@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -145,6 +146,10 @@ namespace GUI
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fRoomManagement room = new fRoomManagement();
+            room.ShowDialog();
+            this.Close();
         }
     }
 }
