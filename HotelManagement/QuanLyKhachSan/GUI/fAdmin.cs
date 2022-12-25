@@ -119,7 +119,10 @@ namespace GUI
 
         private void manageRoomBtn_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            fRoomManagement room = new fRoomManagement();
+            room.ShowDialog();
+            this.Show();
         }
 
         private void fAdmin_Load(object sender, EventArgs e)
@@ -137,7 +140,10 @@ namespace GUI
 
         private void thongKeBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fStatistics thongke = new fStatistics();
+            thongke.ShowDialog();
+            this.Show();
         }
 
         private void changeRegulationBtn_Click(object sender, EventArgs e)

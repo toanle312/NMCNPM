@@ -11,7 +11,7 @@ namespace DAO
     public class DataProvider
     {
         private static DataProvider _instance;
-        private string _connectionStr = @"Data Source=DESKTOP-5EU7M8G;Initial Catalog=QLKHACHSAN1;Integrated Security=True";
+        private string _connectionStr = @"Data Source=LAPTOP-M3NT3CHJ\SQLEXPRESS;Initial Catalog=QLKHACHSAN11;Integrated Security=True";
         private DataProvider() { }
 
         public SqlConnection connectSQL()

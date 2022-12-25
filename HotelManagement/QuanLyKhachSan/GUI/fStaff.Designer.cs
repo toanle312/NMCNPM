@@ -45,7 +45,7 @@
             this.searchRoomBtn = new System.Windows.Forms.Button();
             this.manageClientBtn = new System.Windows.Forms.Button();
             this.makeReportBtn = new System.Windows.Forms.Button();
-            this.makeBillBtn = new System.Windows.Forms.Button();
+            this.useService = new System.Windows.Forms.Button();
             this.manageServiceBtn = new System.Windows.Forms.Button();
             this.manageBillBtn = new System.Windows.Forms.Button();
             this.manageRoomBtn = new System.Windows.Forms.Button();
@@ -304,24 +304,24 @@
             this.makeReportBtn.UseVisualStyleBackColor = false;
             this.makeReportBtn.Click += new System.EventHandler(this.makeReportBtn_Click);
             // 
-            // makeBillBtn
+            // useService
             // 
-            this.makeBillBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.makeBillBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.makeBillBtn.FlatAppearance.BorderSize = 0;
-            this.makeBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.makeBillBtn.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.makeBillBtn.ForeColor = System.Drawing.Color.White;
-            this.makeBillBtn.Image = global::GUI.Properties.Resources.makeBill;
-            this.makeBillBtn.Location = new System.Drawing.Point(394, 70);
-            this.makeBillBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.makeBillBtn.Name = "makeBillBtn";
-            this.makeBillBtn.Size = new System.Drawing.Size(170, 161);
-            this.makeBillBtn.TabIndex = 5;
-            this.makeBillBtn.Text = "Lập hóa đơn";
-            this.makeBillBtn.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.makeBillBtn.UseVisualStyleBackColor = false;
-            this.makeBillBtn.Click += new System.EventHandler(this.makeBillBtn_Click);
+            this.useService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
+            this.useService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.useService.Enabled = false;
+            this.useService.FlatAppearance.BorderSize = 0;
+            this.useService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.useService.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.useService.ForeColor = System.Drawing.Color.White;
+            this.useService.Location = new System.Drawing.Point(394, 70);
+            this.useService.Margin = new System.Windows.Forms.Padding(0);
+            this.useService.Name = "useService";
+            this.useService.Size = new System.Drawing.Size(170, 161);
+            this.useService.TabIndex = 5;
+            this.useService.Text = "Sử dụng dịch vụ";
+            this.useService.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.useService.UseVisualStyleBackColor = false;
+            this.useService.Click += new System.EventHandler(this.makeBillBtn_Click);
             // 
             // manageServiceBtn
             // 
@@ -392,7 +392,7 @@
             this.Controls.Add(this.manageRoomBtn);
             this.Controls.Add(this.manageBillBtn);
             this.Controls.Add(this.manageServiceBtn);
-            this.Controls.Add(this.makeBillBtn);
+            this.Controls.Add(this.useService);
             this.Controls.Add(this.makeReportBtn);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.showMenuPTB);
@@ -432,7 +432,7 @@
         private Button placeRoomBtn;
         private Button manageClientBtn;
         private Button makeReportBtn;
-        private Button makeBillBtn;
+        private Button useService;
         private Button manageServiceBtn;
         private Button manageBillBtn;
         private Button manageRoomBtn;

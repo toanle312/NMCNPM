@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace GUI
@@ -26,7 +27,7 @@ namespace GUI
 
         private void btbAdd_Click(object sender, EventArgs e)
         {
-            bool isFill = fInfor.CheckFillInText(new Control[] { txbMaNV , txbHT, txbCMND, txbGT ,txbDC, txbDT, txbMaTK });
+            bool isFill = fInfor.CheckFillInText(new Control[] { txbMaNV, txbHT, txbCMND, txbGT, txbDC, txbDT, txbMaTK, txbMK });
             if (!isFill)
             {
                 MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -35,7 +36,16 @@ namespace GUI
 
             try
             {
-                int count = MaStaffDAO.Instance.InsertStaff(txbMaNV.Text.ToString(), txbHT.Text.ToString(), txbCMND.Text.ToString(), txbGT.Text.ToString(), txbDC.Text.ToString(), txbDT.Text.ToString(), txbMaTK.Text.ToString());
+                byte[] temp = ASCIIEncoding.ASCII.GetBytes(txbMK.Text);
+                byte[] hashData = new MD5CryptoServiceProvider().ComputeHash(temp);
+                string hashPass = "";
+
+                foreach (byte item in hashData)
+                {
+                    hashPass += item.ToString("x2");
+                }
+
+                int count = MaStaffDAO.Instance.InsertStaff(txbMaNV.Text.ToString(), txbHT.Text.ToString(), txbCMND.Text.ToString(), txbGT.Text.ToString(), txbDC.Text.ToString(), txbDT.Text.ToString(), txbMaTK.Text.ToString(), hashPass);
                 if (count > 0)
                 {
                     MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

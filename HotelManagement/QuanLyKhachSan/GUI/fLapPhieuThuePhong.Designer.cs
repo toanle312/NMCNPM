@@ -122,6 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(446, 80);
             this.label5.Name = "label5";
@@ -168,10 +169,10 @@
             this.columnHeader3});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(312, 161);
+            this.listView1.Location = new System.Drawing.Point(329, 146);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(564, 410);
+            this.listView1.Size = new System.Drawing.Size(557, 410);
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -207,7 +208,7 @@
             this.exitPTB.BackColor = System.Drawing.Color.Transparent;
             this.exitPTB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitPTB.Image = ((System.Drawing.Image)(resources.GetObject("exitPTB.Image")));
-            this.exitPTB.Location = new System.Drawing.Point(839, 1);
+            this.exitPTB.Location = new System.Drawing.Point(856, 25);
             this.exitPTB.Name = "exitPTB";
             this.exitPTB.Size = new System.Drawing.Size(30, 30);
             this.exitPTB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -229,7 +230,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(879, 610);
+            this.ClientSize = new System.Drawing.Size(910, 610);
             this.Controls.Add(this.maphong);
             this.Controls.Add(this.exitPTB);
             this.Controls.Add(this.listView1);

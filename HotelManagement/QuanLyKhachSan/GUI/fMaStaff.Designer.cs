@@ -53,9 +53,10 @@
             // ptbIcon
             // 
             this.ptbIcon.Image = global::GUI.Properties.Resources.manageStaff;
-            this.ptbIcon.Location = new System.Drawing.Point(26, 12);
+            this.ptbIcon.Location = new System.Drawing.Point(21, 10);
+            this.ptbIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbIcon.Name = "ptbIcon";
-            this.ptbIcon.Size = new System.Drawing.Size(60, 60);
+            this.ptbIcon.Size = new System.Drawing.Size(48, 48);
             this.ptbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbIcon.TabIndex = 0;
             this.ptbIcon.TabStop = false;
@@ -65,9 +66,10 @@
             this.lbDSNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDSNV.AutoSize = true;
             this.lbDSNV.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbDSNV.Location = new System.Drawing.Point(405, 100);
+            this.lbDSNV.Location = new System.Drawing.Point(324, 80);
+            this.lbDSNV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDSNV.Name = "lbDSNV";
-            this.lbDSNV.Size = new System.Drawing.Size(540, 51);
+            this.lbDSNV.Size = new System.Drawing.Size(457, 44);
             this.lbDSNV.TabIndex = 1;
             this.lbDSNV.Text = "DANH SÁCH NHÂN VIÊN";
             // 
@@ -75,9 +77,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(92, 21);
+            this.label1.Location = new System.Drawing.Point(74, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(473, 51);
+            this.label1.Size = new System.Drawing.Size(401, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
@@ -93,9 +96,10 @@
             this.columnHeader6,
             this.columnHeader7});
             this.lsvNV.GridLines = true;
-            this.lsvNV.Location = new System.Drawing.Point(106, 240);
+            this.lsvNV.Location = new System.Drawing.Point(85, 192);
+            this.lsvNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lsvNV.Name = "lsvNV";
-            this.lsvNV.Size = new System.Drawing.Size(1091, 358);
+            this.lsvNV.Size = new System.Drawing.Size(874, 287);
             this.lsvNV.TabIndex = 2;
             this.lsvNV.UseCompatibleStateImageBehavior = false;
             this.lsvNV.View = System.Windows.Forms.View.Details;
@@ -145,9 +149,10 @@
             // 
             this.ptbAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbAdd.Image = global::GUI.Properties.Resources.Picture3;
-            this.ptbAdd.Location = new System.Drawing.Point(456, 619);
+            this.ptbAdd.Location = new System.Drawing.Point(350, 502);
+            this.ptbAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbAdd.Name = "ptbAdd";
-            this.ptbAdd.Size = new System.Drawing.Size(121, 99);
+            this.ptbAdd.Size = new System.Drawing.Size(97, 79);
             this.ptbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAdd.TabIndex = 3;
             this.ptbAdd.TabStop = false;
@@ -158,26 +163,29 @@
             this.lbAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbAdd.AutoSize = true;
             this.lbAdd.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbAdd.Location = new System.Drawing.Point(583, 644);
+            this.lbAdd.Location = new System.Drawing.Point(470, 517);
+            this.lbAdd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAdd.Name = "lbAdd";
-            this.lbAdd.Size = new System.Drawing.Size(365, 51);
+            this.lbAdd.Size = new System.Drawing.Size(311, 44);
             this.lbAdd.TabIndex = 4;
             this.lbAdd.Text = "Thêm Nhân Viên";
             this.lbAdd.Click += new System.EventHandler(this.lbAdd_Click);
             // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(106, 184);
+            this.txbSearch.Location = new System.Drawing.Point(85, 147);
+            this.txbSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(321, 31);
+            this.txbSearch.Size = new System.Drawing.Size(258, 27);
             this.txbSearch.TabIndex = 5;
             // 
             // ptbSearch
             // 
             this.ptbSearch.Image = global::GUI.Properties.Resources.search;
-            this.ptbSearch.Location = new System.Drawing.Point(438, 174);
+            this.ptbSearch.Location = new System.Drawing.Point(350, 147);
+            this.ptbSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbSearch.Name = "ptbSearch";
-            this.ptbSearch.Size = new System.Drawing.Size(60, 41);
+            this.ptbSearch.Size = new System.Drawing.Size(48, 27);
             this.ptbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSearch.TabIndex = 6;
             this.ptbSearch.TabStop = false;
@@ -186,9 +194,10 @@
             // ptbClose
             // 
             this.ptbClose.Image = global::GUI.Properties.Resources.exit;
-            this.ptbClose.Location = new System.Drawing.Point(1238, 12);
+            this.ptbClose.Location = new System.Drawing.Point(990, 10);
+            this.ptbClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbClose.Name = "ptbClose";
-            this.ptbClose.Size = new System.Drawing.Size(50, 50);
+            this.ptbClose.Size = new System.Drawing.Size(40, 40);
             this.ptbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbClose.TabIndex = 7;
             this.ptbClose.TabStop = false;
@@ -196,10 +205,10 @@
             // 
             // fMaStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(1300, 740);
+            this.ClientSize = new System.Drawing.Size(1040, 592);
             this.Controls.Add(this.ptbClose);
             this.Controls.Add(this.ptbSearch);
             this.Controls.Add(this.txbSearch);
@@ -210,6 +219,7 @@
             this.Controls.Add(this.lbDSNV);
             this.Controls.Add(this.ptbIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fMaStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fMaStaff";

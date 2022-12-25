@@ -32,10 +32,13 @@
             this.btn_QuayLai = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Thoat = new System.Windows.Forms.Button();
-            this.btn_ThemPhong = new System.Windows.Forms.Button();
+            this.btn_XemThongKe = new System.Windows.Forms.Button();
+            this.txtNam = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtThang = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listView = new System.Windows.Forms.ListView();
             this.toppanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,8 +51,9 @@
             this.toppanel.Controls.Add(this.pictureBox1);
             this.toppanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.toppanel.Location = new System.Drawing.Point(0, 0);
+            this.toppanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toppanel.Name = "toppanel";
-            this.toppanel.Size = new System.Drawing.Size(1031, 151);
+            this.toppanel.Size = new System.Drawing.Size(825, 121);
             this.toppanel.TabIndex = 2;
             // 
             // btn_QuayLai
@@ -59,9 +63,10 @@
             this.btn_QuayLai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_QuayLai.Image = global::GUI.Properties.Resources.return4;
             this.btn_QuayLai.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_QuayLai.Location = new System.Drawing.Point(1107, 57);
+            this.btn_QuayLai.Location = new System.Drawing.Point(886, 46);
+            this.btn_QuayLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_QuayLai.Name = "btn_QuayLai";
-            this.btn_QuayLai.Size = new System.Drawing.Size(199, 58);
+            this.btn_QuayLai.Size = new System.Drawing.Size(159, 46);
             this.btn_QuayLai.TabIndex = 1;
             this.btn_QuayLai.Text = "Quay lại";
             this.btn_QuayLai.UseVisualStyleBackColor = true;
@@ -70,9 +75,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(189, 65);
+            this.label1.Location = new System.Drawing.Point(151, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(587, 37);
+            this.label1.Size = new System.Drawing.Size(516, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thống kê theo mật độ sử dụng phòng";
             // 
@@ -80,63 +86,103 @@
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.thongke;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(120, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(317, 179);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 33);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tháng";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(474, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 31);
-            this.textBox1.TabIndex = 4;
             // 
             // btn_Thoat
             // 
             this.btn_Thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
             this.btn_Thoat.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Thoat.Location = new System.Drawing.Point(806, 598);
+            this.btn_Thoat.Location = new System.Drawing.Point(645, 478);
+            this.btn_Thoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(131, 47);
+            this.btn_Thoat.Size = new System.Drawing.Size(105, 38);
             this.btn_Thoat.TabIndex = 5;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = false;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
-            // btn_ThemPhong
+            // btn_XemThongKe
             // 
-            this.btn_ThemPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
-            this.btn_ThemPhong.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThemPhong.Location = new System.Drawing.Point(105, 598);
-            this.btn_ThemPhong.Name = "btn_ThemPhong";
-            this.btn_ThemPhong.Size = new System.Drawing.Size(175, 47);
-            this.btn_ThemPhong.TabIndex = 6;
-            this.btn_ThemPhong.Text = "Xem thống kê";
-            this.btn_ThemPhong.UseVisualStyleBackColor = false;
+            this.btn_XemThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(232)))), ((int)(((byte)(88)))));
+            this.btn_XemThongKe.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_XemThongKe.Location = new System.Drawing.Point(84, 478);
+            this.btn_XemThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_XemThongKe.Name = "btn_XemThongKe";
+            this.btn_XemThongKe.Size = new System.Drawing.Size(140, 38);
+            this.btn_XemThongKe.TabIndex = 6;
+            this.btn_XemThongKe.Text = "Xem thống kê";
+            this.btn_XemThongKe.UseVisualStyleBackColor = false;
+            this.btn_XemThongKe.Click += new System.EventHandler(this.btn_XemThongKe_Click_1);
+            // 
+            // txtNam
+            // 
+            this.txtNam.Location = new System.Drawing.Point(538, 160);
+            this.txtNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNam.Name = "txtNam";
+            this.txtNam.Size = new System.Drawing.Size(210, 27);
+            this.txtNam.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(442, 160);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 29);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Năm";
+            // 
+            // txtThang
+            // 
+            this.txtThang.Location = new System.Drawing.Point(178, 159);
+            this.txtThang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtThang.Name = "txtThang";
+            this.txtThang.Size = new System.Drawing.Size(210, 27);
+            this.txtThang.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(70, 158);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 29);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Tháng";
+            // 
+            // listView
+            // 
+            this.listView.Location = new System.Drawing.Point(70, 240);
+            this.listView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(668, 189);
+            this.listView.TabIndex = 14;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
             // 
             // fDensityStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 722);
-            this.Controls.Add(this.btn_Thoat);
-            this.Controls.Add(this.btn_ThemPhong);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(825, 578);
+            this.Controls.Add(this.listView);
+            this.Controls.Add(this.txtNam);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtThang);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_Thoat);
+            this.Controls.Add(this.btn_XemThongKe);
             this.Controls.Add(this.toppanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fDensityStatistics";
             this.Text = "fDensityStatistics";
             this.toppanel.ResumeLayout(false);
@@ -153,9 +199,12 @@
         private Button btn_QuayLai;
         private Label label1;
         private PictureBox pictureBox1;
-        private Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private Button btn_Thoat;
-        private Button btn_ThemPhong;
+        private Button btn_XemThongKe;
+        private System.Windows.Forms.TextBox txtNam;
+        private Label label3;
+        private System.Windows.Forms.TextBox txtThang;
+        private Label label2;
+        private ListView listView;
     }
 }

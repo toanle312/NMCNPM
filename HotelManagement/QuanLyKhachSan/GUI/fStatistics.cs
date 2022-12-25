@@ -33,5 +33,15 @@ namespace GUI
             fDensityStatistics fd = new fDensityStatistics();
             fd.Show();
         }
+
+        private void btn_QuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

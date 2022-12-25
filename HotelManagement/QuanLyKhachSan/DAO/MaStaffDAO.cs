@@ -42,10 +42,10 @@ namespace DAO
             return data;
         }
 
-        public int InsertStaff(string MaNV, string HoTen, string CMND, string GioiTinh, string DiaChi, string DienThoai, string MaTK)
+        public int InsertStaff(string MaNV, string HoTen, string CMND, string GioiTinh, string DiaChi, string DienThoai, string MaTK, string MatKhau)
         {
-            string query = "InsertStaff @MaNV , @HoTen , @CMND , @GioiTinh , @DiaChi , @DienThoai , @MaTK ";
-            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { MaNV, HoTen, CMND, GioiTinh, DiaChi, DienThoai, MaTK });
+            string query = "InsertStaff @MaNV , @HoTen , @CMND , @GioiTinh , @DiaChi , @DienThoai , @MaTK , @MatKhau";
+            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { MaNV, HoTen, CMND, GioiTinh, DiaChi, DienThoai, MaTK, MatKhau });
         }
 
         public int UpdateStaff(string MaNV, string HoTen, string CMND, string GioiTinh, string DiaChi, string DienThoai)
