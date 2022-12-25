@@ -534,9 +534,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\GUI\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\GUI\\GUI.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\GUI\\obj\\",
       "projectStyle": "PackageReference",
@@ -559,8 +559,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {
-              "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj"
+            "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj"
             }
           }
         }

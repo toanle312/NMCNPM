@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {}
+    "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {
+    "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\obj\\",
         "projectStyle": "PackageReference",
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj"
+              "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj"
               },
-              "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
+              "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
               }
             }
           }
@@ -76,12 +76,12 @@
         }
       }
     },
-    "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
+    "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\DAO.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DAO\\obj\\",
         "projectStyle": "PackageReference",
@@ -104,8 +104,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
+              "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj"
               }
             }
           }
@@ -145,12 +145,12 @@
         }
       }
     },
-    "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
+    "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\DTO\\obj\\",
         "projectStyle": "PackageReference",

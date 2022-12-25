@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oJxZu9cRjGHakGvi5iLudjyXit+wKMoQFxtn5LLVh4tR0sDeAIZwFM465b4xy/FzjFAtieS56naQt5paUFKG9w==",
+  "dgSpecHash": "92eRYMbZjrFc229VY8leP8yD1Z92YmiC5B87wavfKBdyuU1j0/Qjaz+S1ivdKIZ4G4sFOY3XIgpBHc7QFJ8wNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Source\\Repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\source\\repos\\NMCNPM_final_super\\HotelManagement\\QuanLyKhachSan\\BUS\\BUS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -92,11 +92,11 @@ namespace DAO
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             return dt.Rows[0];
         }
-        public DataRow themchitietphong(string maphong, string mahd, string maphieu)
+        public void themchitietphong(string maphong, string mahd, string maphieu)
         {
             string query = "sp_themchitietphong '" + maphong + "','" + mahd + "','" + maphieu + "'";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-            return dt.Rows[0];
+            DataProvider.Instance.ExecuteNoneQuery(query);
+            return;
         }
         public List<PhieuThuePhong> ds_phieuthuephong()
         {
@@ -127,6 +127,12 @@ namespace DAO
                 strings.Add(r["MaPhong"].ToString());
             }
             return strings;
+        }
+        public void capnhatthanhtien(string mahd)
+        {
+            string query="sp_capnhatthanhtien '"+mahd+"'";
+            DataProvider.Instance.ExecuteNoneQuery(query);
+            return;
         }
     }
 }

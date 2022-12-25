@@ -116,8 +116,10 @@ namespace GUI
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             double total_money = 0;
-            listView2.Items.Clear();
+            //listView2.Items.Clear();
             curpos = dataGridView1.CurrentCell.RowIndex;
+            HoaDonDAO.Instance.capnhatthanhtien(hoadons1[curpos].Mahd);
+            HoaDonDAO.Instance.capnhathoadon(hoadons1[curpos].Mahd);
             int i = 0;
             textBox8.Text = hoadons1[curpos].Mahd;
             textBox7.Text = hoadons1[curpos].Ten;
