@@ -40,20 +40,19 @@ namespace GUI
         {
             
             DataRow r = HoaDonDAO.Instance.thanhtoan_hoadon(Mahd);
-            HoaDonDAO.Instance.capnhathoadon(Mahd);
             ten.Text = r["HoTen"].ToString();
             ngay.Text = r["Ngay"].ToString();
             dc.Text = r["DiaChi"].ToString();
             hd.Text = r["MaHD"].ToString();
             label7.Text = r["CMND"].ToString();
+            HoaDonDAO.Instance.capnhathoadon(hd.Text);
 
-            double t = double.Parse(r["DonGiaPhong"].ToString()) + double.Parse(r["DonGiaDichVu"].ToString());
-            txttongtien.Text = t.ToString();
+            double t = 0;
             int i = 0;
             List<ChiTietHoaDon> chiTietHoaDons = new List<ChiTietHoaDon>();
             List<ChiTietDichVu> chiTietDichVus = new List<ChiTietDichVu>();
-            chiTietHoaDons = HoaDonDAO.Instance.get_list_ChiTietHoaDonPhong(Mahd);
-            chiTietDichVus = HoaDonDAO.Instance.get_list_ChiTietHoaDonDichVu(Mahd);
+            chiTietHoaDons = HoaDonDAO.Instance.get_list_ChiTietHoaDonPhong(hd.Text);
+            chiTietDichVus = HoaDonDAO.Instance.get_list_ChiTietHoaDonDichVu(hd.Text);
             foreach (ChiTietHoaDon chiTietHoaDon in chiTietHoaDons)
             {
                 i++;
@@ -62,7 +61,7 @@ namespace GUI
                 list.SubItems.Add(chiTietHoaDon.Songay);
                 list.SubItems.Add(chiTietHoaDon.Dongia);
                 double phuthu = 0;
-                double tongtien = double.Parse(chiTietHoaDon.Songay) * double.Parse(chiTietHoaDon.Dongia);
+                double tongtien = (double.Parse(chiTietHoaDon.Songay)+1) * double.Parse(chiTietHoaDon.Dongia);
                 if (chiTietHoaDon.Ngoaiquoc.Equals("Không"))
                 {
                     if (chiTietHoaDon.Songuoi <= 2) phuthu = 0;
@@ -77,6 +76,7 @@ namespace GUI
                 list.SubItems.Add(phuthu.ToString());
                 list.SubItems.Add(tongtien.ToString());
                 listView1.Items.Add(list);
+                t += tongtien;
 
             }
             foreach (ChiTietDichVu chiTietDichVu in chiTietDichVus)
@@ -90,7 +90,9 @@ namespace GUI
                 list.SubItems.Add("0");
                 list.SubItems.Add(chiTietDichVu.Thanhtien.ToString());
                 listView1.Items.Add(list);
+                t += double.Parse(chiTietDichVu.Thanhtien);
             }
+            txttongtien.Text = t.ToString();
         }
 
 

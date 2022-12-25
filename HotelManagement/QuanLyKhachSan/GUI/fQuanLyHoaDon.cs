@@ -22,6 +22,7 @@ namespace GUI
             hoadons = HoaDonDAO.Instance.get_list_HoaDon();
             hoadons1 = HoaDonDAO.Instance.get_list_HoaDon_chuathanhtoan();
             InitializeComponent();
+            curpos = -1;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -115,9 +116,10 @@ namespace GUI
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             double total_money = 0;
-            //listView2.Items.Clear();
-            curpos = dataGridView1.CurrentCell.RowIndex;
+            listView2.Items.Clear();
+            curpos = dataGridView2.CurrentCell.RowIndex;
             HoaDonDAO.Instance.capnhatthanhtien(hoadons1[curpos].Mahd);
             HoaDonDAO.Instance.capnhathoadon(hoadons1[curpos].Mahd);
             int i = 0;

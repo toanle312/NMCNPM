@@ -67,6 +67,12 @@ namespace GUI
             DataRow dt1 = HoaDonDAO.Instance.tao_hoadon(Cmnd, "NV001");
             Mahd = dt1["MaHD"].ToString();
             HoaDonDAO.Instance.themchitietphong(Maphong, Mahd, Maphieu);
+            MessageBox.Show("Lập phiếu thuê phòng thành công");
+            cmnd.Text = "";
+            maphong.Items.Remove(Maphong);
+            maphong.Text = "";
+            songuoi.Text = "";
+            ngoaiquoc.Text = "";
         }
 
         private void fLapHoaDon_Load(object sender, EventArgs e)
@@ -76,7 +82,7 @@ namespace GUI
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
