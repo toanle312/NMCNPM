@@ -58,7 +58,8 @@ namespace GUI
                 i++;
                 ListViewItem list = new ListViewItem(i.ToString());
                 list.SubItems.Add(chiTietHoaDon.Phong);
-                list.SubItems.Add(chiTietHoaDon.Songay);
+                double songay1 = double.Parse(chiTietHoaDon.Songay);
+                list.SubItems.Add(songay1.ToString());
                 list.SubItems.Add(chiTietHoaDon.Dongia);
                 double phuthu = 0;
                 double tongtien = (double.Parse(chiTietHoaDon.Songay)+1) * double.Parse(chiTietHoaDon.Dongia);
