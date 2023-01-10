@@ -14,7 +14,7 @@
 
 * Mở file DAO.DataProvider.cs 
 * Sửa đổi private string _connectionStr = 
-@"Data Source=**.\LAPTOP-M3NT3CHJ\SQLEXPRESS**;Initial Catalog=QLKHACHSAN11;Integrated Security=True";
+@"Data Source=**.\LAPTOP-M3NT3CHJ\SQLEXPRESS**;Initial Catalog=QLKHACHSAN1;Integrated Security=True";
 với tên server tương ứng
 
 **3. Tài khoản đăng nhập hệ thống**
